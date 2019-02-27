@@ -1,0 +1,30 @@
+<div fxLayoutAlign="center center" i18n-dir="@@defaultDir" dir="ltr">
+
+  <mat-card fxFlex="30" fxFlex.lt-md="90" class="login">
+    <mat-card-header  fxLayoutAlign="center center">
+      <mat-card-title><b i18n="@@loginTitle">Login</b></mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form fxLayout="column" [formGroup]="loginForm" (ngSubmit)="loginForm.valid && login()" autocomplete="off">
+        <!--<form fxLayout="column">-->
+        <mat-form-field fxFlex="80">
+          <input matInput i18n-placeholder="@@usernamePlaceholder" placeholder="Username" formControlName="name" autofocus>
+        </mat-form-field>
+
+        <mat-form-field fxFlex="80">
+          <input matInput type="password" i18n-placeholder="@@passwordPlaceholder" placeholder="Password" formControlName="password">
+        </mat-form-field>
+        <mat-error>
+          <p *ngIf="error" i18n="@@loginError">
+            Wrong user/password combination
+          </p>
+        </mat-error>
+        <mat-card-actions  fxLayoutAlign="center center">
+          <button mat-raised-button color="primary" i18n="@@loginSubmit">Login</button>
+        </mat-card-actions>
+      </form>
+    </mat-card-content>
+
+  </mat-card>
+
+</div>

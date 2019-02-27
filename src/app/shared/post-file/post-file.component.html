@@ -1,0 +1,10 @@
+<div fxLayout="column" fxLayoutAlign="center center" fxFlex="100">
+
+  <img *ngIf="!isVideo" class="post-image"
+       [src]="filesUrl + file">
+
+  <video class="post-video" controls autoplay loop
+         *ngIf="isVideo" fxFlex.lt-md="100">
+    <source [src]="filesUrl + file" type="video/webm">
+  </video>
+</div>

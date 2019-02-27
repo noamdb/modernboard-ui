@@ -1,0 +1,47 @@
+<div *ngIf="thread" i18n-dir="@@defaultDir" dir="ltr">
+  <div *ngFor="let post of thread.posts; let i = index"
+       fxLayoutAlign="center center"
+       id="post-{{post.id}}">
+
+    <mat-card class="post-item" fxLayout="row wrap" fxLayout.lt-md="column" fxFlex="90" fxFlex.lt-md="98">
+
+      <app-post-file [file]="post.file_name" *ngIf="showFile[i]" (click)="showFile[i] = !showFile[i]"></app-post-file>
+
+      <app-post-thumbnail [thumbnail]="post.thumbnail_name" [file]="post.file_name"
+                          *ngIf="post.file_name && !showFile[i]"
+                          (click)="showFile[i] = !showFile[i]"></app-post-thumbnail>
+
+      <div fxLayout="column" fxLayoutGap="4px" fxFlex fxFlex.lt-md="10">
+
+        <app-post-header [post]="post" [is_locked]="i === 0 && thread.is_locked"
+                         [is_sticky]="i===0 && thread.is_sticky"></app-post-header>
+        <h2 *ngIf="i === 0" class="thread-subject">{{thread.subject}}</h2>
+        <div fxLayout="row wrap" class="content-and-buttons">
+
+          <app-post-body [body]="post.body_html"
+                         (replyOver)="findPostPreview($event)" (replyOut)="removePreview()"></app-post-body>
+          <div fxFlex=""></div>
+            <div class="post-actions" fxFlexAlign="end">
+              <button *ngIf="post.replies" mat-button (click)="repliesDialog(post.replies)">{{post.replies.length}}
+                <span i18n="@@postRepliesButton">Replies</span>
+              </button>
+              <button mat-button (click)="createPostDialog('>>' + post.id)" i18n="@@postReplyButton">Reply</button>
+            </div>
+        </div>
+      </div>
+
+    </mat-card>
+  </div>
+  <div fxLayoutAlign="center center">
+    <button mat-flat-button color="primary" (click)="updatePosts()" i18n="@@postUpdateButton">Update</button>
+  </div>
+
+  <div *ngIf="!thread.is_locked" fxLayoutAlign="end end" fxLayout="row" class="fab-container">
+    <span class="fab"><button mat-fab color="primary" (click)="createPostDialog()"><mat-icon>create</mat-icon></button></span>
+
+  </div>
+</div>
+
+
+<app-reply-preview [top]="previewTop" [left]="previewLeft" [post]="postPreview"></app-reply-preview>
+

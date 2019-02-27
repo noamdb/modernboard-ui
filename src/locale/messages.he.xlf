@@ -1,0 +1,1032 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="defaultDir" datatype="html">
+        <source>ltr</source>
+        <target>rtl</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/reply-preview/reply-preview.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/post-body/post-body.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/replies-dialog/replies-dialog.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/post-thumbnail/post-thumbnail.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/paginator/paginator.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/errors/not-found/not-found.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/home/home.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/create-thread/create-thread.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/create-post/create-post.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/thread-detail/thread-detail.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/board-toolbar/board-toolbar.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/thread-list/thread-list.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/report-dialog/report-dialog.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/post-header/post-header.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/login/login.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/management-toolbar/management-toolbar.component.html
+          </context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/add-user/add-user.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/manage-boards/manage-boards.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/reports-dialog/reports-dialog.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/confirm-dialog/confirm-dialog.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/ban-dialog/ban-dialog.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            app/management/management-thread-detail/management-thread-detail.component.html
+          </context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/reports/reports.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/change-password/change-password.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/board-users/board-users.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/users-list/users-list.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            app/management/management-thread-list/management-thread-list.component.html
+          </context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            app/management/management-post-header/management-post-header.component.html
+          </context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="404Message" datatype="html">
+        <source>The page you are looking for does not exist</source>
+        <target>דף זה לא קיים</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/errors/not-found/not-found.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="HomeAboutTitle" datatype="html">
+        <source>What is ModernBoard?</source>
+        <target>מה זה בלי-גבול?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/home/home.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="HomeAboutContent" datatype="html">
+        <source>
+          ModernBoard is a simple image-based bulletin board where anyone can post comments and share images.
+          There are boards dedicated to a variety of topics. Users do not need to register an account before
+          participating
+          in the community.
+          Feel free to click on a board below that interests you and jump right in!
+        </source>
+        <target xml:space="preserve">בלי-גבול הוא לוח תמונות אנונימי שבו כל אחד יכול לפרסם תגובות ולשתף תמונות.
+          אין צורך בהרשמה לאתר כדי להשתתף בשיח.
+          תרגיש חופשי להביע את דעתך.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/home/home.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="HomeBoardsTitle" datatype="html">
+        <source>Boards</source>
+        <target>לוחות</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/home/home.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="HomeTrendingTitle" datatype="html">
+        <source>Trending</source>
+        <target>מומלצים</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/home/home.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="newThreadTitle" datatype="html">
+        <source>New Thread</source>
+        <target>נושא חדש</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/create-thread/create-thread.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="authorPlaceholder" datatype="html">
+        <source>Name</source>
+        <target>שם</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/create-thread/create-thread.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/create-post/create-post.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="defaultAuthorName" datatype="html">
+        <source>Anonymus</source>
+        <target>אנונימי</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/create-thread/create-thread.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="subjectPlaceholder" datatype="html">
+        <source>Subject*</source>
+        <target>נושא*</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/create-thread/create-thread.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="commentPlaceholder" datatype="html">
+        <source>Comment*</source>
+        <target>תגובה*</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/create-thread/create-thread.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/create-post/create-post.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="selectFileButton" datatype="html">
+        <source>
+          select file
+        </source>
+        <target>בחר קובץ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/create-thread/create-thread.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/create-post/create-post.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="selectFilePlease" datatype="html">
+        <source>Please select a file</source>
+        <target>אנא בחר קובץ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/create-thread/create-thread.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="invalidFileType" datatype="html">
+        <source>Invalid file type. Allowed formats - jpg, png, webm, gif.</source>
+        <target>יש לבחור קובץ מסוג jpg, png, webm, gif</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/create-thread/create-thread.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/create-post/create-post.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="invalidFileSize" datatype="html">
+        <source>The file is too big. Maximum size allowed is 10MB</source>
+        <target>הקובץ שבחרת גדול מידי. יש לבחור קובץ בגודל של עד 10MB</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/create-thread/create-thread.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/create-post/create-post.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="invalidThreadInput" datatype="html">
+        <source>We could not process your thread. Please check the the input is valid.</source>
+        <target>לא ניתן לאשר את הנושא החדש. אנא ודא שכל השדות תקינים</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/create-thread/create-thread.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cancel" datatype="html">
+        <source>Cancel</source>
+        <target>ביטול</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/create-thread/create-thread.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/create-post/create-post.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/report-dialog/report-dialog.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/confirm-dialog/confirm-dialog.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/ban-dialog/ban-dialog.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="submitThread" datatype="html">
+        <source>Create Thread</source>
+        <target>פרסם נושא</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/create-thread/create-thread.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="newPostTitle" datatype="html">
+        <source>New Post</source>
+        <target>תגובה חדשה</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/create-post/create-post.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="defaultAuthor" datatype="html">
+        <source>Anonymus</source>
+        <target>אנונימי</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/create-post/create-post.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="invalidPostInput" datatype="html">
+        <source>We could not process your post. Please check the the input is valid.</source>
+        <target>לא ניתן לאשר את התגובה. אנא ודא שכל השדות תקינים</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/create-post/create-post.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="submitPost" datatype="html">
+        <source>Create Post</source>
+        <target>פרסם תגובה</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/create-post/create-post.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="postRepliesButton" datatype="html">
+        <source>Replies</source>
+        <target>תגובות</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/thread-detail/thread-detail.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            app/management/management-thread-detail/management-thread-detail.component.html
+          </context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="postReplyButton" datatype="html">
+        <source>Reply</source>
+        <target>הגב</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/thread-detail/thread-detail.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="postUpdateButton" datatype="html">
+        <source>Update</source>
+        <target>עדכון</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/thread-detail/thread-detail.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="toolbarTitle" datatype="html">
+        <source>ModernBoard</source>
+        <target>בלי-גבול</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/board-toolbar/board-toolbar.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="boardSelectPlaceholder" datatype="html">
+        <source>Browse</source>
+        <target>בחר לוח</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/board-toolbar/board-toolbar.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reportPostWarningTitle" datatype="html">
+        <source>Attention!</source>
+        <target>שים לב!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/report-dialog/report-dialog.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reportPostWarning" datatype="html">
+        <source>
+          This form is only for reporting illegal content.
+        </source>
+        <target>טופס זה מיועד אך ורק לדיווח על תוכן לא חוקי</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/report-dialog/report-dialog.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reportPostReasonPlaceholder" datatype="html">
+        <source>reason</source>
+        <target>סיבה</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/report-dialog/report-dialog.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reportPostSubmit" datatype="html">
+        <source>Report</source>
+        <target>דיווח</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/report-dialog/report-dialog.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reportPostMenuButton" datatype="html">
+        <source>Report Illegal Post</source>
+        <target>דווח על תוכן לא חוקי</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/imageboard/post-header/post-header.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="loginTitle" datatype="html">
+        <source>Login</source>
+        <target>התחברות</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/login/login.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="usernamePlaceholder" datatype="html">
+        <source>Username</source>
+        <target>שם</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/login/login.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/add-user/add-user.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/board-users/board-users.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="passwordPlaceholder" datatype="html">
+        <source>Password</source>
+        <target>סיסמה</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/login/login.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/add-user/add-user.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/change-password/change-password.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="loginError" datatype="html">
+        <source>
+          Wrong user/password combination
+        </source>
+        <target>שם משתמש או סיסמה לא נכונים</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/login/login.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="loginSubmit" datatype="html">
+        <source>Login</source>
+        <target>התחבר</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/login/login.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="managementToolbarTitle" datatype="html">
+        <source>Management</source>
+        <target>ניהול</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/management-toolbar/management-toolbar.component.html
+          </context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="managementToolbarBoards" datatype="html">
+        <source>Boards</source>
+        <target>לוחות</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/management-toolbar/management-toolbar.component.html
+          </context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="managementToolbarReports" datatype="html">
+        <source>Reports</source>
+        <target>דיווחים</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/management-toolbar/management-toolbar.component.html
+          </context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="managementToolbarProfile" datatype="html">
+        <source>Profile</source>
+        <target>פרופיל</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/management-toolbar/management-toolbar.component.html
+          </context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="managementToolbarChangePassword" datatype="html">
+        <source>Change Password</source>
+        <target>שנה סיסמה</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/management-toolbar/management-toolbar.component.html
+          </context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="managementToolbarChangeUsers" datatype="html">
+        <source>Users</source>
+        <target>משתמשים</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/management-toolbar/management-toolbar.component.html
+          </context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="managementToolbarboardUsers" datatype="html">
+        <source>Board Users</source>
+        <target>לוחות</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/management-toolbar/management-toolbar.component.html
+          </context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="managementToolbarUsersList" datatype="html">
+        <source>List</source>
+        <target>רשימה</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/management-toolbar/management-toolbar.component.html
+          </context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="managementToolbarCreateUser" datatype="html">
+        <source>New User</source>
+        <target>משתמש חדש</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/management-toolbar/management-toolbar.component.html
+          </context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="logout" datatype="html">
+        <source>Logout</source>
+        <target>התנתק</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/management-toolbar/management-toolbar.component.html
+          </context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="createUserTitle" datatype="html">
+        <source>New User</source>
+        <target>משתמש חדש</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/add-user/add-user.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="janitor" datatype="html">
+        <source>Janitor</source>
+        <target>שרת</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/add-user/add-user.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="moderator" datatype="html">
+        <source>Mod</source>
+        <target>מפקח</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/add-user/add-user.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="admin" datatype="html">
+        <source>Admin</source>
+        <target>מנהל ראשי</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/add-user/add-user.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="rolePlaceholder" datatype="html">
+        <source>role</source>
+        <target>תפקיד</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/add-user/add-user.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="createUserSubmit" datatype="html">
+        <source>Create</source>
+        <target>יצירה</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/add-user/add-user.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="userCreatedMessage" datatype="html">
+        <source>User has been added</source>
+        <target>המשתמש נוצר בהצלחה</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/add-user/add-user.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="userCreateBadInput" datatype="html">
+        <source>Bad input. User may already exist</source>
+        <target>קלט לא תקין. ייתכן והמשתמש כבר קיים</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/add-user/add-user.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="createBoardTitle" datatype="html">
+        <source>Create Board</source>
+        <target>לוח חדש</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/manage-boards/manage-boards.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="titlePlaceholder" datatype="html">
+        <source>Title</source>
+        <target>כותרת</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/manage-boards/manage-boards.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="uriPlaceholder" datatype="html">
+        <source>Uri</source>
+        <target>כתובת</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/manage-boards/manage-boards.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="priorityPlaceholder" datatype="html">
+        <source>Priority</source>
+        <target>עדיפות</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/manage-boards/manage-boards.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="createBoardSubmit" datatype="html">
+        <source>Create</source>
+        <target>יצירה</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/manage-boards/manage-boards.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="confirmDialogTitle" datatype="html">
+        <source>Confirm</source>
+        <target>שים לב</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/confirm-dialog/confirm-dialog.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="confirmDialogDelete" datatype="html">
+        <source>Are you sure you want to delete</source>
+        <target>האם אתה בטוח שאתה רוצה למחוק את</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/confirm-dialog/confirm-dialog.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="confirmDialogStick" datatype="html">
+        <source>Are you sure you want to stick</source>
+        <target>האם אתה בטוח שאתה רוצה לנעוץ את</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/confirm-dialog/confirm-dialog.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="confirmDialogLock" datatype="html">
+        <source>Are you sure you want to lock</source>
+        <target>האם אתה בטוח שאתה רוצה לנעול את</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/confirm-dialog/confirm-dialog.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="confirm" datatype="html">
+        <source>Confirm</source>
+        <target>אישור</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/confirm-dialog/confirm-dialog.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="banPosterDialogTitle" datatype="html">
+        <source>Attention!</source>
+        <target>שים לב</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/ban-dialog/ban-dialog.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="banPosterDialogText" datatype="html">
+        <source>
+          You are about to ban the poster.
+        </source>
+        <target>אתה לקראת חסימה של כותב התגובה</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/ban-dialog/ban-dialog.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="banPosterReasonPlaceholder" datatype="html">
+        <source>reason</source>
+        <target>סיבת החסימה</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/ban-dialog/ban-dialog.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="banSubmit" datatype="html">
+        <source>Ban</source>
+        <target>חסימה</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/ban-dialog/ban-dialog.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="banButton" datatype="html">
+        <source>Ban
+        </source>
+        <target>חסימה</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            app/management/management-thread-detail/management-thread-detail.component.html
+          </context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/reports/reports.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            app/management/management-thread-list/management-thread-list.component.html
+          </context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="delete" datatype="html">
+        <source>Delete</source>
+        <target>מחיקה</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            app/management/management-thread-detail/management-thread-detail.component.html
+          </context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/reports/reports.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/users-list/users-list.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="thread" datatype="html">
+        <source>Thread</source>
+        <target>נושא</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            app/management/management-thread-detail/management-thread-detail.component.html
+          </context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/reports/reports.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reports" datatype="html">
+        <source>Reports</source>
+        <target>דיווחים</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            app/management/management-thread-detail/management-thread-detail.component.html
+          </context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/reports/reports.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            app/management/management-thread-list/management-thread-list.component.html
+          </context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lockThreadMenuButton" datatype="html">
+        <source>Lock Thread</source>
+        <target>נעילה</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            app/management/management-thread-detail/management-thread-detail.component.html
+          </context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="stickThreadMenuButton" datatype="html">
+        <source>Stick Thread</source>
+        <target>נעיצה</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            app/management/management-thread-detail/management-thread-detail.component.html
+          </context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="noReports" datatype="html">
+        <source>No reports</source>
+        <target>אין דיווחים</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/reports/reports.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="changePasswordTitle" datatype="html">
+        <source>Change Password</source>
+        <target>שינוי סיסמה</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/change-password/change-password.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="newPasswordPlaceholder" datatype="html">
+        <source>New Password</source>
+        <target>סיסמה חדשה</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/change-password/change-password.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="confirmPasswordPlaceholder" datatype="html">
+        <source>Confirm Password</source>
+        <target>וידוא סיסמה</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/change-password/change-password.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="passwordMismatchError" datatype="html">
+        <source>
+          Passwords don&apos;t match
+        </source>
+        <target>הסיסמאות לא זהות</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/change-password/change-password.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="changePasswordSubmit" datatype="html">
+        <source>Change Password</source>
+        <target>שינוי</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/change-password/change-password.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="changePasswordSuccess" datatype="html">
+        <source>
+          Password has been changed
+        </source>
+        <target>הסיסמה שונתה בהצלחה</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/change-password/change-password.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="changePasswordWrongPassword" datatype="html">
+        <source>
+          Wrong password
+        </source>
+        <target>סיסמה שגויה</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/change-password/change-password.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="addBoardUserTitle" datatype="html">
+        <source>Add user to</source>
+        <target>הוסף משתמש ל</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/board-users/board-users.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="createBoardUserSubmit" datatype="html">
+        <source>Add</source>
+        <target>הוספה</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/board-users/board-users.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="createBoardUserError" datatype="html">
+        <source>
+          User does not exist
+        </source>
+        <target>המשתמש לא קיים</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/board-users/board-users.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tableUsername" datatype="html">
+        <source>Name</source>
+        <target>שם</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/board-users/board-users.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/users-list/users-list.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tableRole" datatype="html">
+        <source>Role</source>
+        <target>תפקיד</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/board-users/board-users.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/users-list/users-list.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tableCreated" datatype="html">
+        <source>Created</source>
+        <target>נוצר</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/board-users/board-users.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/users-list/users-list.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tableRemoveBoardUser" datatype="html">
+        <source>Remove</source>
+        <target>הסרה</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/board-users/board-users.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="deleteThreadButton" datatype="html">
+        <source>Delete
+          Thread
+        </source>
+        <target>מחק נושא</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            app/management/management-thread-list/management-thread-list.component.html
+          </context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/management/reports/reports.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="comments" datatype="html">
+        <source>Comments</source>
+        <target>תגובות</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            app/management/management-thread-list/management-thread-list.component.html
+          </context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="images" datatype="html">
+        <source>Images</source>
+        <target>תמונות</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">
+            app/management/management-thread-list/management-thread-list.component.html
+          </context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,16 @@
+<mat-card-subtitle class="post-header" fxLayout="row wrap" fxLayoutGap="8px" fxLayoutAlign="center center"
+                   i18n-dir="@@defaultDir" dir="ltr">
+  <span class="post-author">{{post.author}}</span>
+  <span class="post-time" dir="ltr">{{post.created}}</span>
+
+  <mat-chip-list *ngIf="post.tripcode">
+    <mat-chip class="board-chip" color="primary" selected>{{post.tripcode}}</mat-chip>
+  </mat-chip-list>
+  <span [ngStyle]="{'color': post.author_id_color}">{{post.author_id}}</span>
+
+  <div fxFlex=""></div>
+  <mat-icon *ngIf="is_sticky">label_outline</mat-icon>
+  <mat-icon *ngIf="is_locked">lock_outline</mat-icon>
+
+  <span>{{post.post_id || post.id}}</span>
+</mat-card-subtitle>

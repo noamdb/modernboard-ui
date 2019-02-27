@@ -1,0 +1,17 @@
+<!-- translation supports only templates so instead of
+ displaying dynamic message we allow only specific actions-->
+<div i18n-dir="@@defaultDir" dir="ltr">
+  <h2 mat-dialog-title i18n="@@confirmDialogTitle">Confirm</h2>
+  <mat-dialog-content>
+    <p>
+      <span *ngIf="action==='delete'" i18n="@@confirmDialogDelete">Are you sure you want to delete </span>
+      <span *ngIf="action==='stick'" i18n="@@confirmDialogStick">Are you sure you want to stick </span>
+      <span *ngIf="action==='lock'" i18n="@@confirmDialogLock">Are you sure you want to lock </span>
+      <b>{{item}}?</b>
+    </p>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button mat-button [mat-dialog-close]="false" i18n="@@cancel">Cancel</button>
+    <button mat-button [mat-dialog-close]="true" i18n="@@confirm">Confirm</button>
+  </mat-dialog-actions>
+</div>

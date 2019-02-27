@@ -1,0 +1,44 @@
+<div *ngFor="let post of posts; let i = index" fxLayoutAlign="center center" i18n-dir="@@defaultDir" dir="ltr">
+  <mat-card class="post-item" fxLayout="row wrap" fxLayout.lt-md="column" fxFlex="90" fxFlex.lt-md="98">
+    <app-post-file *ngIf="showFile[i]" (click)="showFile[i] = !showFile[i]" [file]="post.file_name"></app-post-file>
+
+    <app-post-thumbnail [thumbnail]="post.thumbnail_name" [file]="post.file_name"
+                        *ngIf="!showFile[i]" (click)="showFile[i] = !showFile[i]"></app-post-thumbnail>
+    <div fxLayout="column" fxLayoutGap="4px" fxFlex fxFlex.lt-md="10">
+
+      <app-management-post-header [post]="post"></app-management-post-header>
+
+      <a *ngIf="post.is_op" routerLink="/management/{{post.board_uri}}/threads/{{post.thread_id}}"
+         class="thread-subject">{{post.subject}}</a>
+
+      <div class="post-content" fxLayout="row" fxLayoutWrap="wrap">
+        <div [innerHTML]="post.body_html"></div>
+
+      </div>
+      <div fxFlex=""></div>
+      <div fxFlexAlign="end">
+
+        <mat-card-actions class="post-actions" fxLayout="row" fxLayoutGap="4px">
+          <button *ngIf="loggedUser?.role!=='janitor'" mat-flat-button color="warn" (click)="banDialog(post.id)"
+                  i18n="@@banButton">Ban
+          </button>
+          <button mat-flat-button color="warn" (click)="deleteDialog(post)">
+            <span *ngIf="!post.is_op" i18n="@@delete">Delete</span>
+            <span *ngIf="post.is_op" i18n="@@deleteThreadButton">Delete Thread</span></button>
+          <button *ngIf="post.reports.length" mat-flat-button color="accent"
+                  (click)="reportsDialog(post.id, post.reports)">
+            {{post.reports.length}}
+            <span i18n="@@reports">Reports</span>
+          </button>
+          <button mat-flat-button color="primary"
+                  routerLink="/management/{{post.board_uri}}/threads/{{post.thread_id}}" i18n="@@thread">Thread
+          </button>
+        </mat-card-actions>
+      </div>
+
+    </div>
+
+  </mat-card>
+</div>
+<app-paginator *ngIf="posts?.length >= 30" [currentPage]="page" (change)="setPage($event)"></app-paginator>
+<h2 *ngIf="!posts?.length" fxLayoutAlign="center center" i18n="@@noReports">No reports</h2>

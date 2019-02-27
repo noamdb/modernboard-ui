@@ -1,0 +1,12 @@
+/*:host {*/
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*height: 80vh;*/
+  /*border: 10px solid red;*/
+  /*place-content: center;*/
+  /*align-items: center;*/
+/*}*/
+
+.board-button{
+  margin-bottom: 3px;
+}

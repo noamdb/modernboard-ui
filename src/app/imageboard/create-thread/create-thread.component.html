@@ -1,0 +1,42 @@
+<form class="create-thread" fxLayout="column" [formGroup]="createThreadForm"
+      (ngSubmit)="createThreadForm.valid && createThread()" i18n-dir="@@defaultDir" dir="ltr">
+  <h1 mat-dialog-title fxLayoutAlign="center center" i18n="@@newThreadTitle">New Thread</h1>
+  <mat-form-field fxFlex>
+    <input matInput formControlName="subject"
+           i18n-placeholder="@@subjectPlaceholder" placeholder="Subject*" autofocus>
+  </mat-form-field>
+
+  <mat-form-field fxFlex>
+      <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="3" cdkAutosizeMaxRows="10" formControlName="body"
+                i18n-placeholder="@@commentPlaceholder" placeholder="Comment*"></textarea>
+  </mat-form-field>
+
+  <mat-form-field fxFlex>
+    <input #author matInput placeholder="Name" formControlName="author"
+           i18n-value="@@defaultAuthorName" i18n-placeholder="@@authorPlaceholder" value="Anonymus">
+
+  </mat-form-field>
+
+  <input type="file" #fileInput class="hidden" (change)="onFileSelected($event)">
+  <div fxLayout="column" fxLayoutAlign="center center">
+
+    <button mat-button type="button" (click)="fileInput.click()" i18n="@@selectFileButton">
+      select file
+    </button>
+    <div *ngIf="this.file" class="file-name">
+      {{this.file.name}}
+    </div>
+
+
+    <mat-error>
+      <span *ngIf="fileNotExistsError" i18n="@@selectFilePlease">Please select a file</span>
+      <span *ngIf="fileInvalidTypeError" i18n="@@invalidFileType">Invalid file type. Allowed formats - jpg, png, webm, gif.</span>
+      <span *ngIf="fileInvalidSizeError" i18n="@@invalidFileSize">The file is too big. Maximum size allowed is 10MB</span>
+      <span *ngIf="error" i18n="@@invalidThreadInput">We could not process your thread. Please check the the input is valid.</span>
+    </mat-error>
+  </div>
+  <mat-dialog-actions class="create-thread-actions">
+    <button mat-button mat-dialog-close i18n="@@cancel">Cancel</button>
+    <button mat-button type="submit" [disabled]="submitting" i18n="@@submitThread">Create Thread</button>
+  </mat-dialog-actions>
+</form>

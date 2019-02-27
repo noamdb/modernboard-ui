@@ -1,0 +1,24 @@
+<mat-card-subtitle class="post-header" fxLayout="row wrap"
+                   fxLayoutGap="8px" fxLayoutAlign="center center" i18n-dir="@@defaultDir" dir="ltr">
+  <span class="post-author">{{post.author}}</span>
+  <span class="post-time" dir="ltr">{{post.created}}</span>
+
+  <mat-chip-list *ngIf="post.tripcode">
+    <mat-chip class="board-chip" color="primary" selected>{{post.tripcode}}</mat-chip>
+  </mat-chip-list>
+  <div fxFlex=""></div>
+  <mat-icon *ngIf="is_sticky">label_outline</mat-icon>
+  <mat-icon *ngIf="is_locked">lock_outline</mat-icon>
+  <span>{{post.post_id || post.id}}</span>
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+</mat-card-subtitle>
+<mat-menu #menu>
+  <ng-template matMenuContent>
+    <button mat-menu-item (click)="reportDialog(post.post_id || post.id)">
+      <mat-icon>report</mat-icon>
+      <span i18n="@@reportPostMenuButton">Report Illegal Post</span>
+    </button>
+  </ng-template>
+</mat-menu>

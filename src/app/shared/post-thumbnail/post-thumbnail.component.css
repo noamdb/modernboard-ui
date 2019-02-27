@@ -1,0 +1,24 @@
+.post-thumbnail {
+  object-fit: scale-down;
+}
+
+:host::ng-deep[dir="ltr"] .post-thumbnail {
+  margin-right: 16px;
+}
+
+:host::ng-deep[dir="rtl"] .post-thumbnail {
+  margin-left: 16px;
+}
+
+.post-thumbnail-container {
+  cursor: pointer;
+  position: relative;
+}
+
+.play-arrow {
+  top: 40%;
+  left: 40%;
+  position: absolute;
+  font-size: 5.3em;
+  color: white;
+}

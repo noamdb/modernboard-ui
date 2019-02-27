@@ -1,0 +1,90 @@
+.post-item {
+  padding: 6px;
+  margin-bottom: 8px;
+  word-break: break-word;
+}
+
+/*.post-op{*/
+/*margin-bottom: 8px;*/
+/*}*/
+
+.post-content {
+  overflow: hidden;
+  font-size: 1.13em;
+}
+
+/*.post-thumbnail-container {*/
+  /*cursor: pointer;*/
+  /*position: relative;*/
+/*}*/
+
+/*.post-thumbnail {*/
+  /*object-fit: scale-down;*/
+  /*margin-right: 16px;*/
+  /*margin-top: 16px;*/
+  /*margin-bottom: 16px;*/
+  /*!*max-width: 100%;*!*/
+/*}*/
+
+.post-image {
+  cursor: pointer;
+  object-fit: scale-down;
+  max-width: 100%;
+}
+
+.post-video {
+  cursor: pointer;
+  max-width: 100%;
+}
+
+/*.play-arrow {*/
+  /*top: 40%;*/
+  /*left: 40%;*/
+  /*position: absolute;*/
+  /*font-size: 5.3em;*/
+  /*color: white;*/
+/*}*/
+
+
+.post-author {
+  color: #00C853;
+}
+
+.post-actions {
+  margin-bottom: -6px;
+  margin-right: 6px;
+  margin-left: 6px;
+}
+
+.post-header{
+  margin: 0;
+}
+
+
+.thread-subject{
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bolder;
+  color: #3D5AFE;
+}
+:host::ng-deep .reply {
+  color: #3D5AFE;
+  cursor: pointer;
+}
+
+:host::ng-deep blockquote {
+  margin: 0;
+  padding: 0.5em;
+  border-radius: 0.6em;
+  color: #43A047;
+  background-color: #EEEEEE;
+
+}
+
+:host::ng-deep p {
+  margin: 0;
+}
+
+.content-and-buttons{
+ height: 100%;
+}

@@ -1,0 +1,33 @@
+<div *ngFor="let thread of threads; let i = index" i18n-dir="@@defaultDir" dir="ltr" fxLayoutAlign="center center">
+  <mat-card class="post-item" fxLayout="row wrap" fxLayout.lt-md="column" fxFlex="90" fxFlex.lt-md="98">
+    <app-post-file *ngIf="showFile[i]" (click)="showFile[i] = !showFile[i]" [file]="thread.file_name"></app-post-file>
+
+    <app-post-thumbnail [thumbnail]="thread.thumbnail_name" [file]="thread.file_name"
+                        *ngIf="!showFile[i]" (click)="showFile[i] = !showFile[i]"></app-post-thumbnail>
+    <div fxLayout="column" fxLayoutGap="4px" fxFlex fxFlex.lt-md="10">
+
+      <app-post-header [post]="thread" [is_locked]="thread.is_locked"
+                       [is_sticky]="thread.is_sticky"></app-post-header>
+
+      <a routerLink="../threads/{{thread.id}}" class="thread-subject">{{thread.subject}}</a>
+
+      <div class="post-content" fxLayout="row" fxLayoutWrap="wrap">
+        <div [innerHTML]="thread.body_html"></div>
+
+      </div>
+      <div fxFlex=""></div>
+      <div fxFlexAlign="end">
+
+        <mat-card-actions class="post-actions">
+          <button mat-button routerLink="../threads/{{thread.id}}">{{thread.posts_count}}
+            <span i18n="@@comments">Comments</span></button>
+          <button mat-button routerLink="../threads/{{thread.id}}">{{thread.images_count}}
+            <span i18n="@@images">Images</span></button>
+        </mat-card-actions>
+      </div>
+
+    </div>
+
+  </mat-card>
+
+</div>

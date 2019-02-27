@@ -1,0 +1,16 @@
+<mat-dialog-content i18n-dir="@@defaultDir" dir="ltr">
+  <div *ngFor="let report of reports">
+    <div fxLayout="column">
+
+      <mat-card-subtitle class="reports-header" fxLayout="row wrap" fxLayoutGap="16px">
+        <span [ngStyle]="{'color': report.author_id_color}">{{report.author_id}}</span>
+        <span dir="ltr">{{report.created}}</span>
+      </mat-card-subtitle>
+      <p>{{report.reason}}</p>
+    </div>
+    <span fxFlex></span>
+    <button mat-icon-button color="warn" (click)="dismissPost(report.id)">
+      <mat-icon>cancel</mat-icon>
+    </button>
+  </div>
+</mat-dialog-content>

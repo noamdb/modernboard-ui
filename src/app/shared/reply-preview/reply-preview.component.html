@@ -1,0 +1,26 @@
+<div *ngIf="post" style="position: absolute; z-index: 1"
+     [ngStyle]="{'top.px': finalTop,  'left.px': finalLeft}" i18n-dir="@@defaultDir" dir="ltr">
+  <mat-card class="post-item" fxLayout="row wrap" fxLayout.lt-md="column" #preview>
+    <app-post-thumbnail [thumbnail]="post.thumbnail_name" [file]="post.file_name"></app-post-thumbnail>
+    <div fxLayout="column" fxLayoutGap="4px" fxFlex fxFlex.lt-md="10">
+
+      <mat-card-subtitle fxLayout="row wrap" fxLayoutGap="8px" fxLayoutAlign="center center">
+        <span class="post-author">{{post.author}}</span>
+        <span class="post-time">{{post.created}}</span>
+
+        <mat-chip-list *ngIf="post.tripcode">
+          <mat-chip class="board-chip" color="primary" selected>{{post.tripcode}}</mat-chip>
+        </mat-chip-list>
+        <div fxFlex=""></div>
+
+        <span>{{post.id}}</span>
+      </mat-card-subtitle>
+
+      <h2 *ngIf="post.subject" class="thread-subject">{{post.subject}}</h2>
+
+      <div class="post-content" fxLayout="row">
+        <div [innerHTML]="post.body_html | bypassSecurity"></div>
+      </div>
+    </div>
+  </mat-card>
+</div>

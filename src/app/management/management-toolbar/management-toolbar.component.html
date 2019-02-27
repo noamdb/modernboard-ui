@@ -1,0 +1,25 @@
+<mat-toolbar color="primary" class="management-toolbar" i18n-dir="@@defaultDir" dir="ltr">
+  <button mat-button routerLink="/management" i18n="@@managementToolbarTitle">Management</button>
+  <button mat-button routerLink="./boards" i18n="@@managementToolbarBoards">Boards</button>
+  <button mat-button routerLink="./reports/1" i18n="@@managementToolbarReports">Reports</button>
+  <button mat-button [matMenuTriggerFor]="profileMenu" i18n="@@managementToolbarProfile">Profile</button>
+  <mat-menu #profileMenu="matMenu">
+    <button mat-menu-item routerLink="./changePassword" i18n="@@managementToolbarChangePassword">Change Password</button>
+  </mat-menu>
+  <div *ngIf="loggedUser?.role==='admin'">
+    <button mat-button [matMenuTriggerFor]="usersMenu" i18n="@@managementToolbarChangeUsers">Users</button>
+    <mat-menu #usersMenu="matMenu">
+      <button mat-menu-item routerLink="./users/boards" i18n="@@managementToolbarboardUsers">Board Users</button>
+      <button mat-menu-item routerLink="./users" i18n="@@managementToolbarUsersList">List</button>
+      <button mat-menu-item routerLink="./users/add" i18n="@@managementToolbarCreateUser">New User</button>
+    </mat-menu>
+  </div>
+
+  <span fxFlex></span>
+
+  <button mat-button (click)="logout()" i18n="@@logout">Logout</button>
+
+</mat-toolbar>
+
+
+<router-outlet></router-outlet>

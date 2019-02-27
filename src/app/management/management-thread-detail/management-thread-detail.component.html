@@ -1,0 +1,64 @@
+<div *ngIf="thread" i18n-dir="@@defaultDir" dir="ltr">
+  <div *ngFor="let post of thread.posts; let i = index" fxLayoutAlign="center center" id="post-{{post.id}}">
+    <mat-card class="post-item" fxLayout="row wrap" fxLayout.lt-md="column" fxFlex="90" fxFlex.lt-md="98">
+
+      <app-post-file [file]="post.file_name" *ngIf="showFile[i]" (click)="showFile[i] = !showFile[i]"></app-post-file>
+
+      <app-post-thumbnail [thumbnail]="post.thumbnail_name" [file]="post.file_name"
+                          *ngIf="post.file_name && !showFile[i]"
+                          (click)="showFile[i] = !showFile[i]"></app-post-thumbnail>
+
+      <div fxLayout="column" fxLayoutGap="4px" fxFlex fxFlex.lt-md="10">
+
+        <app-management-post-header [post]="post" [is_locked]="i === 0 && thread.is_locked"
+                                    [is_sticky]="i===0 && thread.is_sticky"></app-management-post-header>
+        <h2 *ngIf="i === 0" class="thread-subject">{{thread.subject}}</h2>
+        <div fxLayout="row wrap" class="content-and-buttons">
+
+          <app-post-body [body]="post.body_html"
+                         (replyOver)="findPostPreview($event)" (replyOut)="removePreview()"></app-post-body>
+          <div fxFlex=""></div>
+
+            <mat-card-actions class="post-actions" fxLayout="row wrap" fxLayoutGap="4px" fxFlexAlign="end">
+              <button *ngIf="loggedUser?.role!=='janitor'" mat-flat-button color="warn" (click)="banDialog(post.id)"
+                      i18n="@@banButton">Ban
+              </button>
+              <button mat-flat-button color="warn" (click)="deleteDialog(post)">
+                <span i18n="@@delete">Delete</span>
+                <span *ngIf="i === 0" i18n="@@thread">Thread</span></button>
+              <button *ngIf="post.reports?.length" mat-flat-button color="accent"
+                      (click)="reportsDialog(post.id, post.reports)">
+                {{post.reports.length}}
+                <span i18n="@@reports">Reports</span>
+              </button>
+              <button *ngIf="post.replies" mat-button (click)="repliesDialog(post.replies)">{{post.replies.length}}
+                <span i18n="@@postRepliesButton">Replies</span>
+              </button>
+              <div *ngIf="i === 0 && loggedUser?.role!=='janitor'">
+                <button mat-button [matMenuTriggerFor]="menu">
+                  <mat-icon>more_vert</mat-icon>
+                </button>
+                <mat-menu #menu>
+                  <ng-template matMenuContent>
+                    <button mat-menu-item (click)="lockThread(thread_id)">
+                      <mat-icon>lock_outline</mat-icon>
+                      <span i18n="@@lockThreadMenuButton">Lock Thread</span>
+                    </button>
+                    <button mat-menu-item (click)="stickThread(thread_id)">
+                      <mat-icon>label_outline</mat-icon>
+                      <span i18n="@@stickThreadMenuButton">Stick Thread</span>
+                    </button>
+                  </ng-template>
+                </mat-menu>
+              </div>
+            </mat-card-actions>
+        </div>
+
+      </div>
+
+    </mat-card>
+  </div>
+</div>
+
+
+<app-reply-preview [top]="previewTop" [left]="previewLeft" [post]="postPreview"></app-reply-preview>

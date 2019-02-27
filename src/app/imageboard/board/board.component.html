@@ -1,0 +1,7 @@
+<app-thread-list [threads]="threads"></app-thread-list>
+<app-paginator *ngIf="threads?.length >= 30" [currentPage]="page" (change)="setPage($event)"></app-paginator>
+
+<div fxLayoutAlign="end end" fxLayout="row" class="fab-container" i18n-dir="@@defaultDir" dir="ltr">
+ <span class="fab"><button mat-fab color="primary" (click)="createThreadDialog()"><mat-icon>create</mat-icon></button></span>
+
+</div>

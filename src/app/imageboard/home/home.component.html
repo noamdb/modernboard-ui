@@ -1,0 +1,37 @@
+<div i18n-dir="@@defaultDir" dir="ltr" fxLayoutAlign="center center" class="text-center">
+  <div fxFlex="50" fxFlex.lt-md="98" fxLayout="column" fxLayoutGap="16px">
+    <mat-card>
+      <mat-card-title class="home-secondary-title" i18n="@@HomeAboutTitle">What is ModernBoard?</mat-card-title>
+      <mat-card-content i18n="@@HomeAboutContent">
+        ModernBoard is a simple image-based bulletin board where anyone can post comments and share images.
+        There are boards dedicated to a variety of topics. Users do not need to register an account before participating
+        in the community.
+        Feel free to click on a board below that interests you and jump right in!
+      </mat-card-content>
+    </mat-card>
+
+    <div>
+      <mat-card fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="16px">
+        <mat-card-title class="home-secondary-title" i18n="@@HomeBoardsTitle">Boards</mat-card-title>
+        <mat-chip-list fxFlex="row">
+          <mat-chip *ngFor="let board of boards" class="board-chip" routerLink="{{board.uri}}/1"
+                    color="primary" selected>{{board.title}}
+          </mat-chip>
+        </mat-chip-list>
+      </mat-card>
+    </div>
+
+
+    <mat-card>
+      <mat-card-title fxLayoutAlign="center center" class="home-secondary-title" i18n="@@HomeTrendingTitle">Trending</mat-card-title>
+      <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutAlign="space-between center">
+        <div *ngFor="let thread of threads" fxFlex="30" fxFlex.lt-md="98">
+          <div fxLayout="column">
+            <img routerLink="/{{thread.board_uri}}/threads/{{thread.id}}" class="trending-image" [src]="thumbnailsPath + thread.thumbnail_name">
+            <a routerLink="/{{thread.board_uri}}/threads/{{thread.id}}" class="trending-subject">{{thread.subject}}</a>
+          </div>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+</div>

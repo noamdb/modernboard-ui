@@ -1,0 +1,26 @@
+<mat-dialog-content i18n-dir="@@defaultDir" dir="ltr" fxLayout="column" fxLayoutGap="8px">
+  <div *ngFor="let post of replyPosts" class="reply-item">
+    <div fxLayout="row wrap" fxLayout.lt-md="column">
+
+    <app-post-thumbnail [thumbnail]="post.thumbnail_name" [file]="post.file_name"></app-post-thumbnail>
+    <div fxLayout="column" fxLayoutGap="4px" fxFlex fxFlex.lt-md="10">
+
+      <mat-card-subtitle class="post-header" fxLayout="row wrap" fxLayoutGap="8px" fxLayoutAlign="center center">
+        <span class="post-author">{{post.author}}</span>
+        <span class="post-time" dir="ltr">{{post.created}}</span>
+
+        <mat-chip-list *ngIf="post.tripcode">
+          <mat-chip class="board-chip" color="primary" selected>{{post.tripcode}}</mat-chip>
+        </mat-chip-list>
+        <div fxFlex=""></div>
+
+        <span>{{post.id}}</span>
+      </mat-card-subtitle>
+      <app-post-body [body]="post.body_html" (replyClick)="closeDialog()" [timeout]="100"
+                     (replyOver)="findPostPreview($event)" (replyOut)="removePreview()"></app-post-body>
+    </div>
+    </div>
+  </div>
+
+  <app-reply-preview [top]="previewTop" [left]="previewLeft" [post]="postPreview"></app-reply-preview>
+</mat-dialog-content>

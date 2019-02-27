@@ -1,0 +1,12 @@
+.http-error-page {
+  height: 100vh;
+}
+
+.http-error-title {
+  font-size: 8em;
+}
+
+.http-error-content {
+  font-size: 1em;
+  margin: 0;
+}

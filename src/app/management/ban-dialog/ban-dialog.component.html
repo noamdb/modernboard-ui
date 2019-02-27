@@ -1,0 +1,18 @@
+<form fxLayout="column" [formGroup]="banForm" (ngSubmit)="banForm.valid && ban()" i18n-dir="@@defaultDir" dir="ltr">
+  <h1 mat-dialog-title fxLayoutAlign="center center" i18n="@@banPosterDialogTitle">Attention!</h1>
+  <p mat-dialog-content i18n="@@banPosterDialogText" fxLayoutAlign="center center">
+    You are about to ban the poster.
+  </p>
+  <mat-form-field fxFlex>
+    <input matInput placeholder="reason" formControlName="reason"
+           i18n-placeholder="@@banPosterReasonPlaceholder">
+
+  </mat-form-field>
+  <mat-dialog-actions fxLayoutAlign="end end" fxLayout="row">
+    <button mat-button mat-dialog-close i18n="@@cancel">Cancel</button>
+    <button mat-button type="submit" i18n="@@banSubmit">Ban</button>
+  </mat-dialog-actions>
+</form>
+
+
+

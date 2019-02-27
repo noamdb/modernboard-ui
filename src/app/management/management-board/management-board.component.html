@@ -1,0 +1,2 @@
+<app-management-thread-list [threads]="threads"></app-management-thread-list>
+<app-paginator *ngIf="threads?.length >= 30" [currentPage]="page" (change)="setPage($event)"></app-paginator>

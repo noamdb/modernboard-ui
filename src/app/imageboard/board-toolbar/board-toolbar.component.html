@@ -1,0 +1,19 @@
+<mat-toolbar i18n-dir="@@defaultDir" dir="ltr" color="primary" class="board-toolbar" fxLayout="row" fxLayoutGap="48px" fxFlexAlign="start">
+
+  <button class="toolbar-header" mat-button routerLink="/" fxFlex="15"
+          fxFlex.lt-md="50" i18n="@@toolbarTitle">ModernBoard</button>
+  <mat-form-field floatLabel="never" fxFlex="10" fxFlex.lt-md="30">
+    <mat-select i18n-placeholder="@@boardSelectPlaceholder" placeholder="Browse" [(value)]="selected" (selectionChange)="navigateTo($event.value)">
+      <mat-option *ngFor="let board of boards" [value]="board.uri">
+        {{board.title}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <!--<button mat-button routerLink="/signup">Sign Up</button>-->
+
+  <span fxFlex></span>
+
+</mat-toolbar>
+
+
+<router-outlet></router-outlet>

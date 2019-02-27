@@ -1,0 +1,4 @@
+<div class="post-content" fxLayout="row wrap" i18n-dir="@@defaultDir" dir="ltr">
+  <div [innerHTML]="body | bypassSecurity"
+       (click)="clickReply($event)" (mouseover)="overReply($event)" (mouseout)="outReply($event)"></div>
+</div>

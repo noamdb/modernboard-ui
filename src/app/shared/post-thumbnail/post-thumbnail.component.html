@@ -1,0 +1,9 @@
+<div *ngIf="thumbnail" fxLayout="column"
+     class="post-thumbnail-container" i18n-dir="@@defaultDir" dir="ltr">
+
+  <img class="post-thumbnail" [src]="thumbnailsPath + thumbnail">
+
+  <div *ngIf="isPlayable" class="play-arrow" fxLayoutAlign="center center"> &#9654;</div>
+
+
+</div>

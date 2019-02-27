@@ -1,0 +1,35 @@
+/*:host::ng-deep .reply {*/
+  /*color: blue;*/
+  /*cursor: pointer;*/
+/*}*/
+
+/*:host::ng-deep blockquote {*/
+  /*!*border-left: 5px solid #ccc;*!*/
+  /*!*margin: 1.5em 10px;*!*/
+  /*!*padding: 0.5em 10px;*!*/
+  /*margin: 0;*/
+  /*padding: 0.5em;*/
+  /*border-radius: 0.6em;*/
+  /*color: #43A047;*/
+  /*background-color: #fafafa;*/
+  /*!*color: #789922;*!*/
+/*}*/
+/*:host::ng-deep[dir="ltr"] blockquote{*/
+  /*border-left: 5px solid #ccc;*/
+/*}*/
+/*:host::ng-deep[dir="rtl"] blockquote{*/
+  /*border-right: 5px solid #ccc;*/
+/*}*/
+
+/*:host::ng-deep p {*/
+  /*margin: 0;*/
+/*}*/
+/*!*:host::ng-deep[dir="ltr"] blockquote :before {*!*/
+  /*!*content: '>';*!*/
+/*!*}*!*/
+
+
+
+/*!*:host::ng-deep p br {*!*/
+/*!*display: inline;*!*/
+/*!*}*!*/

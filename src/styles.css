@@ -1,0 +1,43 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body{
+  /*background-color: #e6ecf0;*/
+  /*background-color: #fafafa;*/
+}
+
+.hidden {
+  display: none;
+}
+
+.error{
+  color: #f44336;
+}
+
+.success{
+  color: green;
+}
+
+.fab-container{
+  margin-right: 12px;
+  margin-left: 12px;
+}
+
+.fab {
+  bottom: 16px;
+  position: fixed;
+  z-index: 5;
+}
+/*.bottom{*/
+  /*bottom: 16px;*/
+  /*position: absolute;*/
+/*}*/
+
+.text-center{
+  text-align: center;
+}
+
+/*.myClass {*/
+  /*flex: 1 1 auto;*/
+  /*display: flex;*/
+  /*flex-direction: column;*/
+/*}*/

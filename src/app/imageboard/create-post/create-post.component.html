@@ -1,0 +1,36 @@
+<form class="create-post" fxLayout="column" [formGroup]="createPostForm"
+      (ngSubmit)="createPostForm.valid && createPost()" i18n-dir="@@defaultDir" dir="ltr">
+  <h1 mat-dialog-title fxLayoutAlign="center center" i18n="@@newPostTitle">New Post</h1>
+  <mat-form-field fxFlex>
+      <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="3" cdkAutosizeMaxRows="10" formControlName="body"
+                i18n-placeholder="@@commentPlaceholder" placeholder="Comment*"></textarea>
+  </mat-form-field>
+  <mat-form-field fxFlex>
+    <input #author matInput placeholder="Name" formControlName="author"
+           i18n-value="@@defaultAuthor" i18n-placeholder="@@authorPlaceholder" value="Anonymus">
+
+  </mat-form-field>
+
+  <input type="file" #fileInput class="hidden" (change)="onFileSelected($event)">
+  <div fxLayout="column" fxLayoutAlign="center center">
+
+    <button mat-button type="button" (click)="fileInput.click()" i18n="@@selectFileButton">
+      select file
+    </button>
+    <div *ngIf="this.file" class="file-name">
+      {{this.file.name}}
+    </div>
+
+
+    <mat-error>
+      <span *ngIf="fileInvalidTypeError" i18n="@@invalidFileType">Invalid file type. Allowed formats - jpg, png, webm, gif.</span>
+      <span *ngIf="fileInvalidSizeError" i18n="@@invalidFileSize">The file is too big. Maximum size allowed is 10MB</span>
+      <span *ngIf="error" i18n="@@invalidPostInput">We could not process your post. Please check the the input is valid.</span>
+    </mat-error>
+  </div>
+  <mat-dialog-actions class="create-post-actions">
+    <button mat-button mat-dialog-close i18n="@@cancel">Cancel</button>
+    <button mat-button type="submit" [disabled]="submitting" i18n="@@submitPost">Create Post</button>
+  </mat-dialog-actions>
+</form>
+

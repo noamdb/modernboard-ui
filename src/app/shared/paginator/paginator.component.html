@@ -1,0 +1,9 @@
+<div fxLayoutAlign="center center" i18n-dir="@@defaultDir" dir="ltr">
+  <button mat-button class="arrow-button" (click)="setPage(-1)" [disabled]="currentPage === 1">
+    <
+  </button>
+  <span>{{currentPage}}</span>
+  <button mat-button class="arrow-button" (click)="setPage(1)" [disabled]="disableNext">
+    >
+  </button>
+</div>

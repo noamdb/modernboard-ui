@@ -1,0 +1,29 @@
+<div fxLayoutAlign="center center" i18n-dir="@@defaultDir" dir="ltr">
+  <mat-card fxFlex="80" fxFlex.lt-md="95" fxLayout="column">
+    <mat-card-content fxLayout="column" fxLayoutAlign="center center">
+      <form *ngIf="loggedUser?.role==='admin'" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="12px"
+            autocomplete="off"
+            [formGroup]="createBoardForm" (ngSubmit)="createBoardForm.valid && createBoard()">
+        <h2 fxLayoutAlign="center center" i18n="@@createBoardTitle">Create Board</h2>
+        <mat-form-field>
+          <input matInput i18n-placeholder="@@titlePlaceholder" placeholder="Title" formControlName="title">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput i18n-placeholder="@@uriPlaceholder" placeholder="Uri" formControlName="uri">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput type="number" i18n-placeholder="@@priorityPlaceholder" placeholder="Priority"
+                 formControlName="priority">
+        </mat-form-field>
+        <mat-card-actions fxLayoutAlign="center center">
+          <button mat-raised-button color="warn" i18n="@@createBoardSubmit">Create</button>
+        </mat-card-actions>
+      </form>
+      <div fxLayout="row wrap" fxLayoutGap="6px" fxLayoutAlign="center center">
+        <button mat-flat-button *ngFor="let board of boards" class="board-button" color="primary"
+                routerLink="../{{board.uri}}/1"> {{board.title}}
+        </button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

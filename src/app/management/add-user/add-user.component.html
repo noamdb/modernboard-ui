@@ -1,0 +1,32 @@
+<div fxLayoutAlign="center center" i18n-dir="@@defaultDir" dir="ltr">
+  <mat-card fxFlex="30" fxFlex.lt-md="90" fxLayout="column">
+    <mat-card-header fxLayoutAlign="center center">
+      <mat-card-title><b i18n="@@createUserTitle">New User</b></mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form fxLayout="column" [formGroup]="addUserForm" (ngSubmit)="addUserForm.valid && addUser()" autocomplete="off">
+        <mat-form-field>
+          <input matInput i18n-placeholder="@@usernamePlaceholder" placeholder="Name" formControlName="name"
+                 autofocus>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput type="password" i18n-placeholder="@@passwordPlaceholder" placeholder="Password"
+                 formControlName="password">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-select i18n-placeholder="@@rolePlaceholder" placeholder="role" formControlName="role">
+            <mat-option value="janitor" i18n="@@janitor">Janitor</mat-option>
+            <mat-option value="mod" i18n="@@moderator">Mod</mat-option>
+            <mat-option value="admin" i18n="@@admin">Admin</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-card-actions fxLayoutAlign="center center">
+          <button mat-raised-button color="primary" i18n="@@createUserSubmit">Create</button>
+        </mat-card-actions>
+      </form>
+      <span class="success" *ngIf="this.success" fxLayoutAlign="center center" i18n="@@userCreatedMessage">User has been added</span>
+      <span class="error" *ngIf="this.error" fxLayoutAlign="center center" i18n="@@userCreateBadInput">Bad input. User may already exist</span>
+    </mat-card-content>
+  </mat-card>
+</div>

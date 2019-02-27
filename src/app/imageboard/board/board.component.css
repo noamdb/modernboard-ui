@@ -1,0 +1,18 @@
+/*img{*/
+  /*max-height: 250px;*/
+  /*max-width: 163px;*/
+  /*float: left;*/
+  /*margin-left: 20px;*/
+  /*margin-right: 20px;*/
+  /*margin-top: 3px;*/
+  /*margin-bottom: 5px;*/
+/*}*/
+
+
+.new-thread-button {
+  /*right: 24px;*/
+  bottom: 16px;
+  position: fixed;
+  z-index: 5;
+}
+
